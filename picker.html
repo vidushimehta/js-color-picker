@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/picker.css"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body class= "teal lighten-4">
+      <div class="container orange lighten-5">
+        <h3 class="center-align teal-text text-darken-1">Color Picker</h3>
+        <div class="row">
+          <div class="col m6 card" id="colorbox">
+          </div>
+          <div class="col m3 offset-m1">
+            <input type= "range" min="0" max="255" id="red">
+            <input type= "range" min="0" max="255" id="green">
+            <input type= "range" min="0" max="255" id="blue">
+          </div>
+          <div class="col m1 offset-m1">
+            <input type="text" id="text_box_value">
+            <input type="text" id="text_box_value">
+            <input type="text" id="text_box_value">
+          </div>
+        </div>
+      </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
