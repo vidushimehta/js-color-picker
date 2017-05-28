@@ -18,19 +18,20 @@
           <div class="col m6 card" id="colorbox">
           </div>
           <div class="col m3 offset-m1">
-            <input type= "range" min="0" max="255" id="red">
-            <input type= "range" min="0" max="255" id="green">
-            <input type= "range" min="0" max="255" id="blue">
+            <input type= "range" min="0" max="255" id="red" onchange= "setSliderValue(this.value, 'red_text')">
+            <input type= "range" min="0" max="255" id="green" onchange= "setSliderValue(this.value, 'green_text')">
+            <input type= "range" min="0" max="255" id="blue" onchange= "setSliderValue(this.value, 'blue_text')">
           </div>
           <div class="col m1 offset-m1">
-            <input type="text" id="text_box_value">
-            <input type="text" id="text_box_value">
-            <input type="text" id="text_box_value">
+            <input type="text" id="red_text">
+            <input type="text" id="green_text">
+            <input type="text" id="blue_text">
           </div>
         </div>
       </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/picker.js"></script>
     </body>
   </html>
